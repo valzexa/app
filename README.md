@@ -39,7 +39,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `valink-v2.3.6.apk` | Android | v2.3.6 | Valink App（包名 com.valzexa.valink，2026-10-24 构建；注册即统一账号、纯钱包扣款、首页轮播图；换包名需卸载旧版重装） |
+| `valink-v2.3.7.apk` | Android | v2.3.7 | Valink App（包名 com.valzexa.valink，2026-10-24 构建；充值渠道后台可开关） |
 | `VaLink-win-x64.exe` | Windows | — | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-22 构建） |
 
 ### gouwu/ — 购物 / 谷里 GULI（竹竹快选 shop 的 Flutter 社交电商端）
