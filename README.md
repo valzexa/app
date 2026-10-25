@@ -27,11 +27,11 @@
 | `personal.apk` | Android | 最新版 | 个人套件 App（官网发布，uni-app 版） |
 | `personal-suite-v1.0.0.apk` | Android | v1.0.0 | Flutter 版 App（包名 com.persuite.personal_suite，2026-10-16 构建） |
 
-### tanxiaoliao/ — 谈校聊
+### vava/ — vava
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `tanxiaoliao_v1.0.16.apk` | Android | v1.0.16 | 谈校聊 App（2026-10-20 发布） |
+| `vava_v1.0.16.apk` | Android | v1.0.16 | vava App（2026-10-20 发布） |
 
 > 注：dist 目录中另有 2026-10-21 重新构建的 1.0.16 安装包（约 132MB），因超过 GitHub 单文件 100MB 限制未收录；如需可改用 Git LFS。
 
@@ -39,7 +39,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `valink-v2.3.8.apk` | Android | v2.3.8 | Valink App（包名 com.valzexa.valink，2026-10-25 构建；轮播图圆角、未购套餐弹窗引导、充值状态弹框、预设金额修复） |
+| `valink-v2.3.9.apk` | Android | v2.3.9 | Valink App（包名 com.valzexa.valink，2026-10-25 构建；轮播图比例自适应完整显示） |
 | `VaLink-win-x64.exe` | Windows | — | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-22 构建） |
 
 ### gouwu/ — 购物 / 谷里 GULI（竹竹快选 shop 的 Flutter 社交电商端）
@@ -52,5 +52,5 @@
 
 - **payhub**：按需求不收录。
 - **服务端二进制**：chatservices.exe / chatservices_linux、hexiao.exe、serverpanel.exe / serverpanel_linux、payhub.exe、lianlian-server、api-server、gouwu-linux 服务端部署包等均为服务端编译产物，不收录。
-- **debug / 旧版本包**：app-debug.apk、tanxiaoliao-diag.apk、tanxiaoliao_v1.0.15.apk 等不收录。
+- **debug / 旧版本包**：app-debug.apk、vava-diag.apk、vava_v1.0.15.apk 等不收录。
 - **ExploreMovie.exe**：官网 aimovie 页面有引用，但本地未找到该发布文件。
