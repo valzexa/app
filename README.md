@@ -52,7 +52,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `vavacoin_v1.2.1.apk` | Android | v1.2.1 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-25 构建；原生登录直连用户中心 + 7 语言、PNG 验证码，修复 release 缺 INTERNET 权限导致验证码空白） |
+| `vavacoin_v1.2.2.apk` | Android | v1.2.2 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-25 构建；原生登录直连用户中心 + 7 语言；验证码改大图（144×48）更易读，取图改单飞防竞态、过期先刷新再提交） |
 
 ## 未收录说明
 
