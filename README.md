@@ -52,7 +52,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `vavacoin_v1.2.2.apk` | Android | v1.2.2 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-25 构建；原生登录直连用户中心 + 7 语言；验证码改大图（144×48）更易读，取图改单飞防竞态、过期先刷新再提交） |
+| `vavacoin_v1.2.3.apk` | Android | v1.2.3 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-26 构建；原生登录直连用户中心 + 7 语言；首页与买卖页新增 1m/5m/15m/1h/1d 折线走势图，实时现价叠加） |
 
 ## 未收录说明
 
