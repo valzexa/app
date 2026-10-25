@@ -48,6 +48,12 @@
 | --- | --- | --- | --- |
 | `gouwu-v1.0.0.apk` | Android | v1.0.0 | 谷里 GULI App（包名 cn.tansuohao.guli_app，2026-10-17 构建） |
 
+### vavacoin/ — VavaCoin（VVC 数字资产交易所）
+
+| 文件 | 平台 | 版本 | 说明 |
+| --- | --- | --- | --- |
+| `vavacoin_v1.2.1.apk` | Android | v1.2.1 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-25 构建；原生登录直连用户中心 + 7 语言、PNG 验证码，修复 release 缺 INTERNET 权限导致验证码空白） |
+
 ## 未收录说明
 
 - **payhub**：按需求不收录。
