@@ -39,6 +39,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `valink-v2.3.16.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，2026-10-27 构建；购买套餐新增支付方式选择：**Creem 卡支付（默认选中）** / PayPal / 钱包余额，卡与 PayPal 跳浏览器收银台、返回自动核对到账开通，本地账号（未绑统一账号）也可直接刷卡购买；含 v2.3.15 全部功能） |
 | `valink-v2.3.15.apk` | Android | v2.3.15 | Valink App（包名 com.valzexa.valink，2026-10-26 构建；新增俄/土/越/波斯/印尼/葡/西 7 种语言，默认跟随系统、缺省英语；余额支付、免费体验置灰保留、流量实时计量） |
 | `VaLink-win-x64.exe` | Windows | v1.0.6 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-26 构建；同款 7 种新语言与跟随系统；应用内充值上线（Creem/PayPal/USDT），购买改余额支付） |
 
@@ -52,6 +53,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vavacoin_v1.3.1.apk` | Android | v1.3.1 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-27 构建；支付修复：Creem 默认支付、下单后拉起收银台、USDT 转账信息展示、订单页自动轮询到账） |
 | `vavacoin_v1.2.3.apk` | Android | v1.2.3 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-26 构建；原生登录直连用户中心 + 7 语言；首页与买卖页新增 1m/5m/15m/1h/1d 折线走势图，实时现价叠加） |
 
 ## 未收录说明
