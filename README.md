@@ -31,9 +31,9 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `vava_v1.0.16.apk` | Android | v1.0.16 | vava App（2026-10-20 发布） |
+| `vava_v1.0.18.apk` | Android | v1.0.18 | vava App（2026-10-26 发布；**群菜单**：聊天输入框左侧弹出，10 个一级 × 每个可挂 5 个二级，动作支持发消息/跳链接/跳小程序/搜聊天记录（结果分页无刷新加载）；**小程序/链接素材库**：管理后台发布→审核→菜单引用；**群 Webhook**：外部应用凭 app_key/app_secret（HMAC 签名）推送消息进群，chat_id（群频道编号）仅群管理与平台管理可见；**聊天气泡全面支持 Markdown + HTML**（`fmt=html` 白名单富文本）；**陌生人单聊放开**（Telegram 同款，默认不限条数，`chat.stranger_dm_limit` 可配）；**公众服务号功能下线**（推送能力由群 Webhook 承接，详见 chatservices 仓库 docs/群增强与开放接口.md）） |
 
-> 注：dist 目录中另有 2026-10-21 重新构建的 1.0.16 安装包（约 132MB），因超过 GitHub 单文件 100MB 限制未收录；如需可改用 Git LFS。
+> 注：v1.0.18 通用 APK 约 99MB，压线低于 GitHub 单文件 100MB 限制（2026-10-26 构建实测 99,186,327 字节）；再大需改用 `--split-per-abi` 出 arm64 包或 Git LFS。
 
 ### valink/ — Valink（原 lianlian 连连）
 
