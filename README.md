@@ -41,9 +41,12 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
-| `valink-v2.3.16.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，2026-10-27 构建；购买套餐新增支付方式选择：**Creem 卡支付（默认选中）** / PayPal / 钱包余额，卡与 PayPal 跳浏览器收银台、返回自动核对到账开通，本地账号（未绑统一账号）也可直接刷卡购买；含 v2.3.15 全部功能） |
+| `valink-v2.3.16-arm64.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-27 构建；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认选中）/ 支付宝 / 微信 / PayPal / USDT——充值页按用户中心渠道开关动态下发，支付宝/微信附链接支付引导，USDT 弹框保持打开可反复核对；套餐购买走钱包余额；含 v2.3.15 全部功能） |
+| `valink-v2.3.16-x86_64.apk` | Android | v2.3.16 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.15.apk` | Android | v2.3.15 | Valink App（包名 com.valzexa.valink，2026-10-26 构建；新增俄/土/越/波斯/印尼/葡/西 7 种语言，默认跟随系统、缺省英语；余额支付、免费体验置灰保留、流量实时计量） |
-| `VaLink-win-x64.exe` | Windows | v1.0.6 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-26 构建；同款 7 种新语言与跟随系统；应用内充值上线（Creem/PayPal/USDT），购买改余额支付） |
+| `VaLink-win-x64.exe` | Windows | v1.0.7 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-27 构建；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认）/ 支付宝 / 微信 / PayPal / USDT，支付宝/微信附链接支付引导，与 APK 充值页同能力；购买走余额支付；9 种语言） |
+
+> 注：自 v2.3.16 起 valink 改用 gradle ABI splits 分包发布：arm64 包（68.7MB）为手机主发布包，x86_64 包（72.1MB，libbox 核心含 x86_64 原生库）供模拟器 / x86 平板；v2.3.16 早期通用 APK（68.7MB）已被两个分包取代；v2.3.15 及以前为通用 APK。
 
 ### gouwu/ — 购物 / 谷里 GULI（竹竹快选 shop 的 Flutter 社交电商端）
 
