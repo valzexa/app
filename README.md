@@ -31,6 +31,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vava_v1.0.28.apk` | Android | v1.0.28 | vava App（arm64，2026-10-28 构建；**新增统一账号 Google 登录**：优先复用系统里已登录的 Google 账号（原生 Credential Manager，命中时无任何弹窗），失败依次回退系统浏览器 → 内置浏览器；登录后与账密登录同构换取业务 JWT；**修复**中心接口不可达时 client_id 为空串导致原生登录被跳过的问题；含 v1.0.27 全部功能） |
+| `vava_v1.0.28-x86_64.apk` | Android | v1.0.28 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.27.apk` | Android | v1.0.27 | vava App（arm64，2026-10-28 构建；**充值改为应用内原生弹层**：微信支付 / 银行卡（Visa、Mastercard，Creem）/ PayPal / USDT，微信扫码或复制支付链接完成支付，USDT 展示收款地址与精确金额，弹窗内轮询到账并自动刷新余额，不再跳转用户中心网页；**动态卡片改版**：显示作者头像与昵称、点击头像弹出资料卡，他人动态标题显示昵称，动态时间兼容秒级时间戳；含 v1.0.26 全部功能） |
 | `vava_v1.0.27-x86_64.apk` | Android | v1.0.27 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.26.apk` | Android | v1.0.26 | vava App（arm64，2026-10-27 构建；**充值渠道对齐用户中心**：App 内钱包充值渠道与统一钱包 5 渠道（Creem 卡 / 支付宝 / 微信 / PayPal / USDT）一致，提示文案含支付宝/微信，多语言钱包词条补全；含 v1.0.25 全部功能） |
@@ -43,12 +45,14 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `valink-v2.3.17-arm64.apk` | Android | v2.3.17 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**新增统一账号 Google 登录**：Credential Manager 复用系统已登录 Google 账号（静默优先，无 UI），失败依次回退系统浏览器（`valink://uc-login` 深链回跳）→ 内置 WebView；**服务端修复钱包扣款**：同名订单并发/重试不再重复开通套餐（原先「钱扣一次、货发两次」），并发购买多单时长正确叠加，扣款成功后记账失败不再阻断开通；含 v2.3.16 全部功能） |
+| `valink-v2.3.17-x86_64.apk` | Android | v2.3.17 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.16-arm64.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 clean 全量重编；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认选中）/ 支付宝 / 微信 / PayPal / USDT——充值页按用户中心渠道开关动态下发，支付宝/微信附链接支付引导，USDT 弹框保持打开可反复核对；套餐购买走钱包余额；含 v2.3.15 全部功能） |
 | `valink-v2.3.16-x86_64.apk` | Android | v2.3.16 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.15.apk` | Android | v2.3.15 | Valink App（包名 com.valzexa.valink，2026-10-26 构建；新增俄/土/越/波斯/印尼/葡/西 7 种语言，默认跟随系统、缺省英语；余额支付、免费体验置灰保留、流量实时计量） |
 | `VaLink-win-x64.exe` | Windows | v1.0.7 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-28 重编；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认）/ 支付宝 / 微信 / PayPal / USDT，支付宝/微信附链接支付引导，与 APK 充值页同能力；购买走余额支付；9 种语言） |
 
-> 注：自 v2.3.16 起 valink 改用 gradle ABI splits 分包发布：arm64 包（68.7MB）为手机主发布包，x86_64 包（72.1MB，libbox 核心含 x86_64 原生库）供模拟器 / x86 平板；v2.3.16 早期通用 APK（68.7MB）已被两个分包取代；v2.3.15 及以前为通用 APK。
+> 注：自 v2.3.16 起 valink 改用 gradle ABI splits 分包发布：arm64 包（v2.3.17 为 67.1MB）为手机主发布包，x86_64 包（70.4MB，libbox 核心含 x86_64 原生库）供模拟器 / x86 平板；v2.3.15 及以前为通用 APK。
 
 ### gouwu/ — 购物 / 谷里 GULI（竹竹快选 shop 的 Flutter 社交电商端）
 
@@ -60,6 +64,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vavacoin_v1.3.6.apk` | Android | v1.3.6 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-28 构建；**新增统一账号 Google 登录**：优先复用系统已登录 Google 账号（原生），失败回退系统浏览器（`vavacoin://uc-login` 深链回跳）→ 内置浏览器；补全第②级系统浏览器回退；含 v1.3.5 全部功能） |
 | `vavacoin_v1.3.5.apk` | Android | v1.3.5 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-28 构建；**开户费**：VGD 开户默认 5 USDT（后台可调），开户遇 4005 弹「支付开户费并开通」确认并重发 pay_fee；**开发者 API**：实时价格 / 币种转换 / 转账，配套 7 语言开发者门户与后台开发者管理，费率与 App 一致；含 v1.3.2 USDT 内部结算余额、v1.3.3 币种子账户（7 币种开户制）、v1.3.4 转账手续费提示与后台账户冻结；全站亮色主题） |
 
 ## 未收录说明
