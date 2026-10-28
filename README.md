@@ -31,6 +31,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vava_v1.0.30.apk` | Android | v1.0.30 | vava App（arm64，2026-10-28 构建；**支付方式统一为「Creem（银行卡）」**（不再写信用卡/USD 卡支付），充值页新增「支付方式说明」入口，跳系统浏览器打开 7 语说明页（Visa/Mastercard/Amex/Discover 支持范围、**银联 UnionPay 不支持**、PayPal/支付宝/微信/USDT 细则）；**钱包页新增账单**：展示用户中心下发的扣款/充值/调账记录（扣款红负、充值绿正、含扣后余额与时间）；含 v1.0.29 全部功能） |
+| `vava_v1.0.30-x86_64.apk` | Android | v1.0.30 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.29.apk` | Android | v1.0.29 | vava App（arm64，2026-10-28 构建；**Google 登录简化为单一路径**：只保留内置浏览器（走本后端授权码流程 + 桥页回传 JWT），移除原生 Credential Manager（弹出系统账号选择器、选完即消失拿不到 ID Token）与系统浏览器（授权完成不返回应用）；含 v1.0.28 全部功能） |
 | `vava_v1.0.29-x86_64.apk` | Android | v1.0.29 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.28.apk` | Android | v1.0.28 | vava App（arm64，2026-10-28 构建；**新增统一账号 Google 登录**：优先复用系统里已登录的 Google 账号（原生 Credential Manager，命中时无任何弹窗），失败依次回退系统浏览器 → 内置浏览器；登录后与账密登录同构换取业务 JWT；**修复**中心接口不可达时 client_id 为空串导致原生登录被跳过的问题；含 v1.0.27 全部功能） |
@@ -47,6 +49,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `valink-v2.3.19-arm64.apk` | Android | v2.3.19 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**支付方式文案统一为「Creem（银行卡）」**（原「Creem (USD card payment)」），充值页新增「支付方式说明」入口，跳系统浏览器打开用户中心 7 语说明页（含银联 UnionPay 是否支持的明确说明）；含 v2.3.18 全部功能） |
+| `valink-v2.3.19-x86_64.apk` | Android | v2.3.19 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.18-arm64.apk` | Android | v2.3.18 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**移除登录页的 Google 登录入口**（原生选择账号后消失、系统浏览器不返回均不可用），登录回归账号密码 / 统一账号；同步移除 Credential Manager 依赖，包体减小；含 v2.3.17 全部功能与服务端钱包扣款修复） |
 | `valink-v2.3.18-x86_64.apk` | Android | v2.3.18 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.17-arm64.apk` | Android | v2.3.17 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**新增统一账号 Google 登录**：Credential Manager 复用系统已登录 Google 账号（静默优先，无 UI），失败依次回退系统浏览器（`valink://uc-login` 深链回跳）→ 内置 WebView；**服务端修复钱包扣款**：同名订单并发/重试不再重复开通套餐（原先「钱扣一次、货发两次」），并发购买多单时长正确叠加，扣款成功后记账失败不再阻断开通；含 v2.3.16 全部功能） |
