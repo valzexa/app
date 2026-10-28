@@ -50,7 +50,7 @@
 | `valink-v2.3.16-arm64.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 clean 全量重编；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认选中）/ 支付宝 / 微信 / PayPal / USDT——充值页按用户中心渠道开关动态下发，支付宝/微信附链接支付引导，USDT 弹框保持打开可反复核对；套餐购买走钱包余额；含 v2.3.15 全部功能） |
 | `valink-v2.3.16-x86_64.apk` | Android | v2.3.16 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.15.apk` | Android | v2.3.15 | Valink App（包名 com.valzexa.valink，2026-10-26 构建；新增俄/土/越/波斯/印尼/葡/西 7 种语言，默认跟随系统、缺省英语；余额支付、免费体验置灰保留、流量实时计量） |
-| `VaLink-win-x64.exe` | Windows | v1.0.7 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-28 重编；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认）/ 支付宝 / 微信 / PayPal / USDT，支付宝/微信附链接支付引导，与 APK 充值页同能力；购买走余额支付；9 种语言） |
+| `VaLink-win-x64.exe` | Windows | v1.0.8 | VaLink Windows 客户端（.NET 10 自包含单文件发布，2026-10-28 构建；**新增统一账号 Google 登录**：打开系统默认浏览器，用浏览器里已登录的 Google 账号一键登录，经 `valink://uc-login` 回跳一次性 code——程序启动时自动注册该协议，已在运行时转交给现有窗口，不会重复启动；含 v1.0.7 全部功能（充值 5 渠道 / 余额购买套餐 / 9 语言）） |
 
 > 注：自 v2.3.16 起 valink 改用 gradle ABI splits 分包发布：arm64 包（v2.3.17 为 67.1MB）为手机主发布包，x86_64 包（70.4MB，libbox 核心含 x86_64 原生库）供模拟器 / x86 平板；v2.3.15 及以前为通用 APK。
 
