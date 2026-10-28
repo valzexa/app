@@ -31,6 +31,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vava_v1.0.29.apk` | Android | v1.0.29 | vava App（arm64，2026-10-28 构建；**Google 登录简化为单一路径**：只保留内置浏览器（走本后端授权码流程 + 桥页回传 JWT），移除原生 Credential Manager（弹出系统账号选择器、选完即消失拿不到 ID Token）与系统浏览器（授权完成不返回应用）；含 v1.0.28 全部功能） |
+| `vava_v1.0.29-x86_64.apk` | Android | v1.0.29 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.28.apk` | Android | v1.0.28 | vava App（arm64，2026-10-28 构建；**新增统一账号 Google 登录**：优先复用系统里已登录的 Google 账号（原生 Credential Manager，命中时无任何弹窗），失败依次回退系统浏览器 → 内置浏览器；登录后与账密登录同构换取业务 JWT；**修复**中心接口不可达时 client_id 为空串导致原生登录被跳过的问题；含 v1.0.27 全部功能） |
 | `vava_v1.0.28-x86_64.apk` | Android | v1.0.28 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.27.apk` | Android | v1.0.27 | vava App（arm64，2026-10-28 构建；**充值改为应用内原生弹层**：微信支付 / 银行卡（Visa、Mastercard，Creem）/ PayPal / USDT，微信扫码或复制支付链接完成支付，USDT 展示收款地址与精确金额，弹窗内轮询到账并自动刷新余额，不再跳转用户中心网页；**动态卡片改版**：显示作者头像与昵称、点击头像弹出资料卡，他人动态标题显示昵称，动态时间兼容秒级时间戳；含 v1.0.26 全部功能） |
@@ -45,6 +47,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `valink-v2.3.18-arm64.apk` | Android | v2.3.18 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**移除登录页的 Google 登录入口**（原生选择账号后消失、系统浏览器不返回均不可用），登录回归账号密码 / 统一账号；同步移除 Credential Manager 依赖，包体减小；含 v2.3.17 全部功能与服务端钱包扣款修复） |
+| `valink-v2.3.18-x86_64.apk` | Android | v2.3.18 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.17-arm64.apk` | Android | v2.3.17 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 构建；**新增统一账号 Google 登录**：Credential Manager 复用系统已登录 Google 账号（静默优先，无 UI），失败依次回退系统浏览器（`valink://uc-login` 深链回跳）→ 内置 WebView；**服务端修复钱包扣款**：同名订单并发/重试不再重复开通套餐（原先「钱扣一次、货发两次」），并发购买多单时长正确叠加，扣款成功后记账失败不再阻断开通；含 v2.3.16 全部功能） |
 | `valink-v2.3.17-x86_64.apk` | Android | v2.3.17 | Valink App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `valink-v2.3.16-arm64.apk` | Android | v2.3.16 | Valink App（包名 com.valzexa.valink，arm64 手机主包，2026-10-28 clean 全量重编；**充值渠道对齐统一钱包 5 渠道**：Creem 卡（默认选中）/ 支付宝 / 微信 / PayPal / USDT——充值页按用户中心渠道开关动态下发，支付宝/微信附链接支付引导，USDT 弹框保持打开可反复核对；套餐购买走钱包余额；含 v2.3.15 全部功能） |
@@ -64,6 +68,7 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vavacoin_v1.3.7.apk` | Android | v1.3.7 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-28 构建；**Google 登录简化为单一路径**：只保留内置浏览器，移除原生 Credential Manager（选账号后消失）与系统浏览器（不返回应用）；含 v1.3.6 全部功能） |
 | `vavacoin_v1.3.6.apk` | Android | v1.3.6 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-28 构建；**新增统一账号 Google 登录**：优先复用系统已登录 Google 账号（原生），失败回退系统浏览器（`vavacoin://uc-login` 深链回跳）→ 内置浏览器；补全第②级系统浏览器回退；含 v1.3.5 全部功能） |
 | `vavacoin_v1.3.5.apk` | Android | v1.3.5 | VavaCoin App（包名 cn.tansuohao.vavacoin，arm64，2026-10-28 构建；**开户费**：VGD 开户默认 5 USDT（后台可调），开户遇 4005 弹「支付开户费并开通」确认并重发 pay_fee；**开发者 API**：实时价格 / 币种转换 / 转账，配套 7 语言开发者门户与后台开发者管理，费率与 App 一致；含 v1.3.2 USDT 内部结算余额、v1.3.3 币种子账户（7 币种开户制）、v1.3.4 转账手续费提示与后台账户冻结；全站亮色主题） |
 
