@@ -13,8 +13,8 @@
 | --- | --- | --- | --- |
 | `ShopSuite.exe` | Windows | 最新版 | PC 客户端（官网发布） |
 | `ShopSuiteWeb.exe` | Windows | 最新版 | Web 版客户端（官网发布） |
-| `manager.apk` | Android | 最新版 | 门店管理 App（官网发布，Flutter 1.0.2，包名 com.tansuohao.flutter_mobile，2026-11-08 构建） |
-| `ShopSuite-mobile-v1.0.2.apk` | Android | v1.0.2 | 新版 Flutter 移动端（包名 com.tansuohao.flutter_mobile，2026-11-08 构建） |
+| `manager.apk` | Android | 最新版 | 门店管理 App（官网发布，Flutter 1.0.3，包名 com.tansuohao.flutter_mobile，2026-11-10 构建） |
+| `ShopSuite-mobile-v1.0.3.apk` | Android | v1.0.3 | 新版 Flutter 移动端（包名 com.tansuohao.flutter_mobile，2026-11-10 构建） |
 | `门店管理系统-v2.1.1-修复网络错误.apk` | Android | v2.1.1 | 门店管理 App（dist 发布，包名 cn.wangxiao2.suite） |
 | `智店长柜-松生活-20260929-v2.2.6.apk` | Android | v2.2.6 | 智店长柜（松生活客户版，包名 cn.tansuohao.shellsuite） |
 
