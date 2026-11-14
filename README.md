@@ -24,8 +24,8 @@
 | --- | --- | --- | --- |
 | `personal-suite.exe` | Windows | 最新版 | 个人套件 PC 客户端（官网发布） |
 | `personal-suite-cloud.exe` | Windows | 最新版 | 个人套件云同步版（官网发布） |
-| `personal.apk` | Android | 最新版 | 个人套件 App（官网发布，uni-app 版） |
-| `personal-suite-v1.0.0.apk` | Android | v1.0.0 | Flutter 版 App（包名 com.persuite.personal_suite，2026-10-16 构建） |
+| `personal.apk` | Android | 最新版 | 个人套件 App 官网下载入口（与 `personal-suite-v1.0.0.apk` 同一 Flutter 包；官网已改为 GitHub 直链 `raw.githubusercontent.com/valzexa/app/main/personal-suite/personal.apk`） |
+| `personal-suite-v1.0.0.apk` | Android | v1.0.0 | Flutter 版 App（包名 com.persuite.personal_suite，2026-11-15 构建，61,302,071 B） |
 
 ### vava/ — vava
 
