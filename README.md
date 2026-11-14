@@ -31,6 +31,8 @@
 
 | 文件 | 平台 | 版本 | 说明 |
 | --- | --- | --- | --- |
+| `vava_v1.0.37.apk` | Android | v1.0.37 | vava App（arm64，2026-11-15 构建；**多域名自动容灾**：业务 API 与统一账号中心均按 `valzexa.com` → `tansuohao.cn` → `6608666.xyz` 顺序取用，先验 DNS 解析再打 `/health` 探活，某域名解析失败或不可达自动用下一个；请求网络级失败时重新探活切线路并重试一次（上传/SSE/登录换票同规则）；内网调试可用 `--dart-define=API_BASE` 固定基址；含 v1.0.36 全部功能） |
+| `vava_v1.0.37-x86_64.apk` | Android | v1.0.37 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.30.apk` | Android | v1.0.30 | vava App（arm64，2026-10-28 构建；**支付方式统一为「Creem（银行卡）」**（不再写信用卡/USD 卡支付），充值页新增「支付方式说明」入口，跳系统浏览器打开 7 语说明页（Visa/Mastercard/Amex/Discover 支持范围、**银联 UnionPay 不支持**、PayPal/支付宝/微信/USDT 细则）；**钱包页新增账单**：展示用户中心下发的扣款/充值/调账记录（扣款红负、充值绿正、含扣后余额与时间）；含 v1.0.29 全部功能） |
 | `vava_v1.0.30-x86_64.apk` | Android | v1.0.30 | vava App x86_64 版（模拟器 / x86 平板用，功能同 arm64 包） |
 | `vava_v1.0.29.apk` | Android | v1.0.29 | vava App（arm64，2026-10-28 构建；**Google 登录简化为单一路径**：只保留内置浏览器（走本后端授权码流程 + 桥页回传 JWT），移除原生 Credential Manager（弹出系统账号选择器、选完即消失拿不到 ID Token）与系统浏览器（授权完成不返回应用）；含 v1.0.28 全部功能） |
